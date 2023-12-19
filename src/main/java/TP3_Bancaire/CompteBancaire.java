@@ -8,8 +8,6 @@ import lombok.Setter;
 @Data
 @AllArgsConstructor
 
-@Getter
-@Setter
 
 public abstract class CompteBancaire {
 	protected float rate;

@@ -1,21 +1,23 @@
 package Polymorphismes.lombok;
 
 import lombok.AllArgsConstructor;
+import lombok.Data;
 import lombok.EqualsAndHashCode;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 import lombok.ToString;
 
-@Getter
-@Setter
 
+@Data
 
 @AllArgsConstructor
 @NoArgsConstructor
 
 @ToString (callSuper = true)
-@EqualsAndHashCode(callSuper = true)
+// Me permet de concatener ce qu'il y a ici et les Param présent dans le parent.
+
+@EqualsAndHashCode(callSuper = false)
 
 public class Employe extends Personne {
 	
@@ -24,6 +26,8 @@ public class Employe extends Personne {
 	public String toString(String prenom, String nom, int age) {
 
 		StringBuilder sB = new StringBuilder();
+		
+		sB.append(super.getClass()).append(getSalaire()).append("...salaire !");
 		
 		sB.append("= > Prénom : ").append(getPrenom());
 		sB.append("= > Nom : ").append(getNom());

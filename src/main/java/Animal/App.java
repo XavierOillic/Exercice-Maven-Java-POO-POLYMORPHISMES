@@ -17,7 +17,11 @@ public class App {
 		
 		for (Animal anim : animaux) {
 			//PrintStream printStream = new PrintStream(null);
+			if (anim instanceof Chat) {
+				((Chat)anim).griffer(); // =====> CASTING INSTANCE OF <============
+			}
 			System.out.println(anim.Crier()+anim.Manger());
+			System.out.println();
 		}
 
 	}

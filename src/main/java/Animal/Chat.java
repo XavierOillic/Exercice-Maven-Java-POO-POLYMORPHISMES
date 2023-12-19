@@ -17,5 +17,6 @@ public class Chat extends Animal{
 	public String Manger(){
 		return nom+", Tu abuses, ta gamelle est déjà pleine, tu peux aller manger. ";
 	}
+	public void griffer() {};
 
 }

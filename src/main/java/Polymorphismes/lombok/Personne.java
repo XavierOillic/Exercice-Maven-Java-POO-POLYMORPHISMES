@@ -7,15 +7,13 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
-@Getter
-@Setter
-
 @EqualsAndHashCode
 @AllArgsConstructor
 @NoArgsConstructor
 
 
-@Data
+@Data 
+// LE DATA EMBARQUE EN UN SEUL MOT GETTER SETTER REQUIRED TOSTRING
 
 public abstract class Personne {
 	

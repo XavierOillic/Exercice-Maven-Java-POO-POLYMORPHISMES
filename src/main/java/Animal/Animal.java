@@ -12,6 +12,7 @@ public abstract class Animal {
 		Animal (String nom){
 			this.nom = nom;
 		}
+		Animal (){}; //constructeur vide.
 		
 		public String Manger () {
 			return nom+", Mange !";

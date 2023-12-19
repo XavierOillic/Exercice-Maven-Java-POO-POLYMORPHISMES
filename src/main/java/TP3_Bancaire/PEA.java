@@ -20,11 +20,10 @@ public class PEA extends CompteBancaire {
 	
 	@Override
 	public float rateCalcul () {
+		float interest = (super.rateCalcul());
 		this.getImpositRate();
 		
-		 float interest = 0;
-		
-		 
+		 // float interest = 0;
 		 interest = (deposit * rate) / 100; 
 		 
 		 return interest - (interest * this.getImpositRate() / 100);
